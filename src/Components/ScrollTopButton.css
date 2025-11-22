@@ -1,0 +1,40 @@
+.scroll-top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #ff7a00, #ff4800);
+  color: white;
+  font-size: 28px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s ease-in-out;
+
+  animation: floatArrow 2s infinite ease-in-out;
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes floatArrow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+/* 📱 Mobile View (Small Arrow) */
+@media (max-width: 480px) {
+  .scroll-top-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    bottom: 25px;
+    right: 25px;
+  }
+}

@@ -1,0 +1,308 @@
+/* ABOUT US SECTION */
+.about-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #f8f8f8;
+}
+
+/* Heading */
+.about-title-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.popular-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.blue-text {
+  color: #0c437a;
+}
+
+.orange-text {
+  color: #ff7b00;
+}
+
+.popular-subtext {
+  color: #777;
+  font-size: 16px;
+  max-width: 650px;
+  margin: 10px auto 0;
+  line-height: 1.6;
+}
+
+/* MAIN LAYOUT */
+.about-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* IMAGE SLIDER */
+.about-img-box {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-img {
+  width: 100%;
+  height: 360px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Image Fade Animation */
+.fade-animation {
+  transition: opacity 0.8s ease;
+  animation: fade 1s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* STATS */
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 20px;
+}
+
+.stats-box {
+  flex: 1;
+  text-align: center;
+}
+
+.stats-icon-bg {
+  width: 55px;
+  height: 55px;
+  background: #ffe8c9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px auto;
+}
+
+.stats-icon {
+  font-size: 24px;
+  color: #ce7500;
+}
+
+.stats-value {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.stats-label {
+  font-size: 14px;
+  color: #666;
+}
+
+/* RIGHT CONTENT */
+.about-content {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* HIGHLIGHTS */
+.about-highlights {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.highlight-box {
+  background: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  border-left: 4px solid #ff7b00;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* REVIEW SECTION */
+.review-wrapper {
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* Reviewer pill */
+.review-top-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 40px;
+  width: fit-content;
+  margin: auto;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.pill-icons {
+  display: flex;
+  align-items: center;
+}
+
+.pill-icons img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: -10px;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+.pill-count {
+  background: #ff7b00;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.pill-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* REVIEW BOXES */
+.review-box-row {
+  margin-top: 22px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.review-box-small {
+  flex: 1;
+  background: #fff;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.review-small-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.small-stars {
+  font-size: 13px;
+  color: #f8b400;
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+============================== */
+
+/* TABLETS */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 45px;
+  }
+
+  .stats-row {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .review-box-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .review-box-small {
+    flex: 1 1 45%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 50px 15px;
+  }
+
+  .popular-title {
+    font-size: 30px;
+  }
+
+  .about-img {
+    height: 250px;
+  }
+
+  .stats-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .review-box-row {
+    flex-direction: column;
+  }
+
+  .review-box-small {
+    width: 100%;
+  }
+}
+.highlight-box {
+  background: white;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 4px solid #ff7b00;
+}
+
+.highlight-box .icon {
+  font-size: 20px;
+}

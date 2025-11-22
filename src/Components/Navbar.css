@@ -1,0 +1,112 @@
+/* ==========================
+        LOGO & BRAND
+========================== */
+.nav-logo {
+  width: auto;
+  height: 52px;
+  max-height: 50px;
+  object-fit: contain;
+  margin-left: 30px;
+}
+
+.brand-name {
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #0c437a;
+  margin: 0;
+}
+
+.ash-letter {
+  color: #929292;
+}
+
+/* ==========================
+        NAV LINKS
+========================== */
+.nav-link {
+  font-size: 17px;
+  font-weight: 500;
+  color: #333 !important;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ff7b00 !important;
+}
+
+/* ==========================
+        BOOK SLOT BUTTON
+========================== */
+.book-btn {
+  background: #ff7b00;
+  color: #fff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 40px;
+}
+
+.book-btn:hover {
+  background: #e46d00;
+}
+
+.mobile-small-btn {
+  width: auto;
+  display: inline-flex;
+  margin: 0 auto;
+}
+
+/* Phone icon */
+.phone-icon {
+  color: #fff;
+  font-size: 14px;
+}
+
+/* ==========================
+        MOBILE VIEW
+========================== */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .brand-name {
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  .nav-logo {
+    width: 38px;
+    height: 44px;
+    margin-left: 10px;
+  }
+
+  /* Smooth NAVBAR OPEN/CLOSE */
+  .navbar-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .navbar-collapse.show {
+    max-height: 500px !important;
+    position: static !important;
+    background: #fff;
+    padding-bottom: 20px;
+  }
+
+  .navbar-collapse.collapsing {
+    max-height: 0 !important;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .navbar {
+    position: relative !important;
+  }
+}

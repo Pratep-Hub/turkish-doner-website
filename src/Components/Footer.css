@@ -1,0 +1,132 @@
+/* ===========================
+      FOOTER MAIN SECTION
+=========================== */
+.footer-section {
+  background: #0d1a26;
+  color: white;
+  padding: 60px 20px 30px;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Footer columns */
+.footer-box {
+  flex: 1;
+  min-width: 230px;
+}
+
+/* ===========================
+          LOGO + ABOUT
+=========================== */
+.footer-logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.footer-about {
+  margin-top: 10px;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* ===========================
+        QUICK LINKS CENTER
+=========================== */
+.footer-center-links {
+  text-align: center;   /* CENTER BOX */
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.footer-links li:hover {
+  color: #ff7b00;
+}
+
+/* ===========================
+        SOCIAL MEDIA RIGHT
+=========================== */
+.footer-social-right {
+  text-align: right;   /* TITLE RIGHT */
+}
+
+/* Social row */
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  justify-content: flex-end;   /* ICON + TEXT RIGHT SIDE */
+}
+
+.social-row:hover p,
+.social-row:hover .icon {
+  color: #ff7b00;
+}
+
+/* Icon styling */
+.social-row .icon {
+  font-size: 22px;
+  color: #ddd;
+}
+
+.social-row p {
+  margin: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ===========================
+          COPYRIGHT
+=========================== */
+.footer-bottom {
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: #ddd;
+}
+
+/* ===========================
+        MOBILE RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social-right {
+    text-align: center;
+  }
+
+  .social-row {
+    justify-content: center;   /* Center icons on mobile */
+  }
+}

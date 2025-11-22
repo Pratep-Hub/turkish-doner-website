@@ -1,0 +1,133 @@
+/* ============================
+   OUR MENU TITLE
+============================ */
+.menu-heading-section {
+  text-align: center;
+  margin-top: 70px;
+  padding: 0 20px;
+}
+
+.menu-heading-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.blue-text { color: #003b92; }
+.orange-text { color: #ff6a00; }
+
+.menu-heading-subtext {
+  color: #666;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 15px auto 0;
+  line-height: 1.6;
+}
+
+/* ============================
+      FULL MENU
+============================ */
+.full-menu {
+  width: 100%;
+  padding: 70px 40px;
+}
+
+.category-title {
+  font-size: 30px;
+  font-weight: 700;
+  width: fit-content;
+  margin: 0 auto 35px auto;
+  padding: 8px 25px;
+  background: #eef3ff;
+  border-radius: 50px;
+  color: #003b92;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* ============================
+    GRID
+============================ */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-bottom: 70px;
+}
+
+/* ============================
+    MENU CARD
+============================ */
+.menu-box {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  padding: 18px 15px 25px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.4s ease;
+  opacity: 0;                     /* For animation */
+  transform: translateY(40px);    /* Animation start */
+}
+
+.menu-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+  border-color: #ff7b00;
+}
+
+/* Image */
+.menu-box-img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 18px;
+  transition: 0.4s;
+}
+
+.menu-box:hover .menu-box-img {
+  transform: scale(1.12);
+}
+
+/* Text */
+.menu-box-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.menu-box-slogan {
+  font-size: 14px;
+  color: #777;
+  margin-top: 6px;
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-heading-title {
+    font-size: 32px;
+  }
+
+  .menu-heading-subtext {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
