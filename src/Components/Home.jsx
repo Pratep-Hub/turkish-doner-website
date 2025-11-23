@@ -15,7 +15,7 @@ import menuPage1 from "../assets/menu1.png";
 import menuPage2 from "../assets/menu2.png";
 
 // Brand logos
-import zomatoLogo from "../assets/zomato.png";
+import zomatoLogo from "../assets/Zomato.png";
 import swiggyLogo from "../assets/swiggy.jpg";
 
 function Home() {
