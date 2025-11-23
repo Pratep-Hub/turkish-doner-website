@@ -1,5 +1,8 @@
 import "../Components/Footer.css";
-import { FaWhatsapp, FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
+import ZomatoLogo from "../assets/Zomato.png";
+import SwiggyLogo from "../assets/swiggy.jpg";
+import Whatsapp from "../assets/whatsapp.png";   // FIXED NAME
+import Instra from "../assets/Instra.png";       // Instagram image logo
 
 function Footer() {
   return (
@@ -30,30 +33,66 @@ function Footer() {
           </ul>
         </div>
 
-        {/* SOCIAL MEDIA — ICONS RIGHT SIDE */}
+        {/* SOCIAL MEDIA RIGHT */}
         <div className="footer-box footer-social-right">
           <h3 className="footer-title">Follow Us</h3>
 
-          <div className="social-row">
-            <FaWhatsapp className="icon" />
+          {/* WhatsApp */}
+          <div
+            className="social-row"
+            onClick={() => window.open("https://wa.me/9846055044", "_blank")}
+          >
+            <img
+              src={Whatsapp}
+              alt="WhatsApp"
+              style={{ width: "22px", height: "22px" }}
+            />
             <p>WhatsApp</p>
           </div>
 
-          <div className="social-row">
-            <FaInstagram className="icon" />
+          {/* Instagram */}
+          <div
+            className="social-row"
+            onClick={() =>
+              window.open(
+                "https://www.instagram.com/turkishdoner_tpr?igsh=aHYyNHBzY3V0MHBy",
+                "_blank"
+              )
+            }
+          >
+            <img
+              src={Instra}
+              alt="Instagram"
+              style={{ width: "22px", height: "22px" }}
+            />
             <p>Instagram</p>
           </div>
 
-          <div className="social-row">
-            <FaFacebookF className="icon" />
-            <p>Facebook</p>
+          {/* Zomato */}
+          <div
+            className="social-row"
+            onClick={() => window.open("https://zomato.onelink.me/xqzv/ecz61n5n", "_blank")}
+          >
+            <img
+              src={ZomatoLogo}
+              alt="Zomato"
+              style={{ width: "22px", height: "22px" }}
+            />
+            <p>Zomato</p>
           </div>
 
-          <div className="social-row">
-            <FaTwitter className="icon" />
-            <p>Twitter</p>
+          {/* Swiggy */}
+          <div
+            className="social-row"
+            onClick={() => window.open("https://www.swiggy.com/menu/1231557?source=sharing", "_blank")}
+          >
+            <img
+              src={SwiggyLogo}
+              alt="Swiggy"
+              style={{ width: "22px", height: "22px" }}
+            />
+            <p>Swiggy</p>
           </div>
-
         </div>
 
       </div>

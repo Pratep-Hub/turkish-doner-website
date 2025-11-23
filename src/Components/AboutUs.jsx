@@ -54,7 +54,7 @@ function AboutUs() {
               <div className="stats-icon-bg">
                 <span className="stats-icon">👥</span>
               </div>
-              <h3 className="stats-value">1K+</h3>
+              <h3 className="stats-value">250+</h3>
               <p className="stats-label">Happy Customers</p>
             </div>
 
@@ -70,7 +70,7 @@ function AboutUs() {
               <div className="stats-icon-bg">
                 <span className="stats-icon">🧑‍🍳</span>
               </div>
-              <h3 className="stats-value">1 Year</h3>
+              <h3 className="stats-value">6 Months</h3>
               <p className="stats-label">Experience</p>
             </div>
           </div>

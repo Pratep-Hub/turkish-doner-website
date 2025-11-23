@@ -6,8 +6,22 @@
   color: white;
   padding: 60px 20px 30px;
   width: 100%;
+
+  /* ⭐ Your brand logo as background ⭐ */
+  background-image: url("../assets/Turkish_Logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 260px;
+
+  /* Light watermark effect */
+  opacity: 1;
+  background-blend-mode: overlay;
+  filter: brightness(1.1);
 }
 
+/* ===========================
+      FOOTER LAYOUT
+=========================== */
 .footer-container {
   max-width: 1200px;
   margin: auto;
@@ -17,15 +31,12 @@
   gap: 40px;
 }
 
-/* Footer columns */
 .footer-box {
   flex: 1;
   min-width: 230px;
 }
 
-/* ===========================
-          LOGO + ABOUT
-=========================== */
+/* LOGO + ABOUT */
 .footer-logo {
   font-size: 28px;
   font-weight: 700;
@@ -37,11 +48,9 @@
   line-height: 1.6;
 }
 
-/* ===========================
-        QUICK LINKS CENTER
-=========================== */
+/* QUICK LINKS */
 .footer-center-links {
-  text-align: center;   /* CENTER BOX */
+  text-align: center;
 }
 
 .footer-title {
@@ -66,14 +75,11 @@
   color: #ff7b00;
 }
 
-/* ===========================
-        SOCIAL MEDIA RIGHT
-=========================== */
+/* SOCIAL RIGHT */
 .footer-social-right {
-  text-align: right;   /* TITLE RIGHT */
+  text-align: right;
 }
 
-/* Social row */
 .social-row {
   display: flex;
   align-items: center;
@@ -81,7 +87,7 @@
   margin-bottom: 14px;
   cursor: pointer;
   transition: 0.3s ease;
-  justify-content: flex-end;   /* ICON + TEXT RIGHT SIDE */
+  justify-content: flex-end;
 }
 
 .social-row:hover p,
@@ -89,7 +95,6 @@
   color: #ff7b00;
 }
 
-/* Icon styling */
 .social-row .icon {
   font-size: 22px;
   color: #ddd;
@@ -102,9 +107,7 @@
   font-weight: 500;
 }
 
-/* ===========================
-          COPYRIGHT
-=========================== */
+/* COPYRIGHT */
 .footer-bottom {
   text-align: center;
   padding-top: 25px;
@@ -127,6 +130,6 @@
   }
 
   .social-row {
-    justify-content: center;   /* Center icons on mobile */
+    justify-content: center;
   }
 }

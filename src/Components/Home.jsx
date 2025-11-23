@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../Components/Home.css";
 
 // Background & menu images
-import shopImg from "../assets/shop.jpg";
+import shopImg from "../assets/Shop.jpg";
 import Leef from "../assets/Leef Chicken.png";
 import Dragan from "../assets/Dragan Chicken.png";
 import Cream from "../assets/Cream Chiecken.png";
@@ -10,12 +10,20 @@ import Turkish from "../assets/Turkish Roll.png";
 import Arabic from "../assets/Arabic Roll.png";
 import Plate from "../assets/Plate.png";
 
-// PDF Converted Images
+// PDF images
 import menuPage1 from "../assets/menu1.png";
 import menuPage2 from "../assets/menu2.png";
 
+// Brand logos
+import zomatoLogo from "../assets/zomato.png";
+import swiggyLogo from "../assets/swiggy.jpg";
+
 function Home() {
   const [showPopup, setShowPopup] = useState(false);
+  const [showOrderPopup, setShowOrderPopup] = useState(false);
+
+  const zomatoURL = "https://zomato.onelink.me/xqzv/ecz61n5n";
+  const swiggyURL = "https://www.swiggy.com/menu/1231557?source=sharing";
 
   return (
     <section id="home" className="home-section">
@@ -34,9 +42,10 @@ function Home() {
           </p>
 
           <div className="home-buttons">
-            <button className="btn-order">Order Online</button>
+            <button className="btn-order" onClick={() => setShowOrderPopup(true)}>
+              Order Online
+            </button>
 
-            {/* VIEW MENU POPUP BUTTON */}
             <button className="btn-view" onClick={() => setShowPopup(true)}>
               View Menu
             </button>
@@ -44,13 +53,33 @@ function Home() {
         </div>
       </div>
 
-      {/* Popup Modal */}
+      {/* ORDER POPUP */}
+      {showOrderPopup && (
+        <div className="order-popup-overlay" onClick={() => setShowOrderPopup(false)}>
+          <div className="order-popup" onClick={(e) => e.stopPropagation()}>
+            <h3 className="order-popup-title">Pick your favourite delivery partner</h3>
+
+            <div className="order-box-container">
+              <div className="order-box" onClick={() => window.open(zomatoURL, "_blank")}>
+                <img src={zomatoLogo} className="brand-logo" alt="Zomato" />
+              </div>
+
+              <div className="order-box" onClick={() => window.open(swiggyURL, "_blank")}>
+                <img src={swiggyLogo} className="brand-logo" alt="Swiggy" />
+              </div>
+            </div>
+
+            <button className="close-btn" onClick={() => setShowOrderPopup(false)}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* MENU POPUP */}
       {showPopup && (
         <div className="menu-popup-overlay" onClick={() => setShowPopup(false)}>
-          <div
-            className="menu-popup"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className="menu-popup" onClick={(e) => e.stopPropagation()}>
             <h3 className="menu-title">Our Menu</h3>
 
             <div className="menu-images">
@@ -130,6 +159,7 @@ function Home() {
         </div>
 
       </div>
+
     </section>
   );
 }

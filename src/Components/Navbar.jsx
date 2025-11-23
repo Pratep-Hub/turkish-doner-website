@@ -7,7 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Navbar = () => {
   const handleCall = () => {
-    const phone = "+918300972293";
+    const phone = "+919846055044";
 
     // Detect Mobile Devices
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);

@@ -53,18 +53,18 @@ function ContactPage() {
 
           <div className="info-card">
             <h3>📞 Phone</h3>
-            <p>+91 70255 34268</p>
+            <p>+91 98460 55044</p>
           </div>
 
           <div className="info-card">
             <h3>✉ Email</h3>
-            <p>turkishdoner@gmail.com</p>
+            <p>Turkishdonerthriprayar@gmail.com</p>
           </div>
 
           <div className="info-card timing-card">
             <h3>⏰ Shop Timing</h3>
-            <p><strong>Open:</strong> 11:00 AM</p>
-            <p><strong>Close:</strong> 12:00 AM</p>
+            <p><strong>Open:</strong> 12:00 AM</p>
+            <p><strong>Close:</strong> 11:30 PM</p>
           </div>
         </div>
 
