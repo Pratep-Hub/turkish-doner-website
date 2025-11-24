@@ -113,7 +113,7 @@ function Home() {
         <div className="menu-card">
           <div className="heart-icon">♥</div>
           <img src={Leef} alt="item" className="menu-img" />
-          <h3 className="menu-title">Vazha Leaf Alfam</h3>
+          <h3 className="menu-title">Vazhayla Alfam</h3>
           <p className="menu-desc">Hot Leaf Magic</p>
           <div className="menu-rating-price"><div className="stars">★★★★★</div></div>
         </div>
