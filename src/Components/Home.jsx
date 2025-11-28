@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../Components/Home.css";
 
-// Background & menu images
 import shopImg from "../assets/Shop.jpg";
 import Leef from "../assets/Leef Chicken.png";
 import Dragan from "../assets/Dragan Chicken.png";
@@ -10,16 +9,10 @@ import Turkish from "../assets/Turkish Roll.png";
 import Arabic from "../assets/Arabic Roll.png";
 import Plate from "../assets/Plate.png";
 
-// PDF images
-import menuPage1 from "../assets/menu1.png";
-import menuPage2 from "../assets/menu2.png";
-
-// Brand logos
 import zomatoLogo from "../assets/Zomato.png";
 import swiggyLogo from "../assets/swiggy.jpg";
 
 function Home() {
-  const [showPopup, setShowPopup] = useState(false);
   const [showOrderPopup, setShowOrderPopup] = useState(false);
 
   const zomatoURL = "https://zomato.onelink.me/xqzv/ecz61n5n";
@@ -41,13 +34,10 @@ function Home() {
             and crispy snacks are made with the finest ingredients, served hot and fresh.
           </p>
 
-          <div className="home-buttons">
+          {/* Only Order Online button - centered */}
+          <div className="home-buttons single-button">
             <button className="btn-order" onClick={() => setShowOrderPopup(true)}>
               Order Online
-            </button>
-
-            <button className="btn-view" onClick={() => setShowPopup(true)}>
-              View Menu
             </button>
           </div>
         </div>
@@ -76,24 +66,6 @@ function Home() {
         </div>
       )}
 
-      {/* MENU POPUP */}
-      {showPopup && (
-        <div className="menu-popup-overlay" onClick={() => setShowPopup(false)}>
-          <div className="menu-popup" onClick={(e) => e.stopPropagation()}>
-            <h3 className="menu-title">Our Menu</h3>
-
-            <div className="menu-images">
-              <img src={menuPage1} className="menu-img" alt="Menu Page 1" />
-              <img src={menuPage2} className="menu-img" alt="Menu Page 2" />
-            </div>
-
-            <button className="close-btn" onClick={() => setShowPopup(false)}>
-              Close
-            </button>
-          </div>
-        </div>
-      )}
-
       {/* Popular Section */}
       <div className="popular-menu-section">
         <h1 className="popular-title">
@@ -109,7 +81,6 @@ function Home() {
 
       {/* Menu Cards */}
       <div className="menu-items-row">
-
         <div className="menu-card">
           <div className="heart-icon">♥</div>
           <img src={Leef} alt="item" className="menu-img" />
@@ -157,9 +128,7 @@ function Home() {
           <p className="menu-desc">Plated for Pure Pleasure</p>
           <div className="menu-rating-price"><div className="stars">★★★★★</div></div>
         </div>
-
       </div>
-
     </section>
   );
 }
