@@ -9,14 +9,6 @@ import Turkish from "../assets/Turkish Roll.png";
 import Arabic from "../assets/Arabic Roll.png";
 import Plate from "../assets/Plate.png";
 
-<<<<<<< HEAD
-=======
-// PDF images
-import menuPage1 from "../assets/menu1.png";
-import menuPage2 from "../assets/menu2.png";
-
-// Brand logos
->>>>>>> c07b0a173cd29ac70dc2a159095b309b1e47069b
 import zomatoLogo from "../assets/Zomato.png";
 import swiggyLogo from "../assets/swiggy.jpg";
 
@@ -28,7 +20,7 @@ function Home() {
 
   return (
     <section id="home" className="home-section">
-
+      
       {/* Background Section */}
       <div className="home-bg" style={{ backgroundImage: `url(${shopImg})` }}>
         <div className="overlay"></div>
@@ -53,21 +45,38 @@ function Home() {
 
       {/* ORDER POPUP */}
       {showOrderPopup && (
-        <div className="order-popup-overlay" onClick={() => setShowOrderPopup(false)}>
-          <div className="order-popup" onClick={(e) => e.stopPropagation()}>
-            <h3 className="order-popup-title">Pick your favourite delivery partner</h3>
+        <div
+          className="order-popup-overlay"
+          onClick={() => setShowOrderPopup(false)}
+        >
+          <div
+            className="order-popup"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className="order-popup-title">
+              Pick your favourite delivery partner
+            </h3>
 
             <div className="order-box-container">
-              <div className="order-box" onClick={() => window.open(zomatoURL, "_blank")}>
+              <div
+                className="order-box"
+                onClick={() => window.open(zomatoURL, "_blank")}
+              >
                 <img src={zomatoLogo} className="brand-logo" alt="Zomato" />
               </div>
 
-              <div className="order-box" onClick={() => window.open(swiggyURL, "_blank")}>
+              <div
+                className="order-box"
+                onClick={() => window.open(swiggyURL, "_blank")}
+              >
                 <img src={swiggyLogo} className="brand-logo" alt="Swiggy" />
               </div>
             </div>
 
-            <button className="close-btn" onClick={() => setShowOrderPopup(false)}>
+            <button
+              className="close-btn"
+              onClick={() => setShowOrderPopup(false)}
+            >
               Close
             </button>
           </div>
@@ -89,6 +98,7 @@ function Home() {
 
       {/* Menu Cards */}
       <div className="menu-items-row">
+
         <div className="menu-card">
           <div className="heart-icon">♥</div>
           <img src={Leef} alt="item" className="menu-img" />
@@ -136,6 +146,7 @@ function Home() {
           <p className="menu-desc">Plated for Pure Pleasure</p>
           <div className="menu-rating-price"><div className="stars">★★★★★</div></div>
         </div>
+
       </div>
     </section>
   );
