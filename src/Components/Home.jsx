@@ -9,6 +9,14 @@ import Turkish from "../assets/Turkish Roll.png";
 import Arabic from "../assets/Arabic Roll.png";
 import Plate from "../assets/Plate.png";
 
+<<<<<<< HEAD
+=======
+// PDF images
+import menuPage1 from "../assets/menu1.png";
+import menuPage2 from "../assets/menu2.png";
+
+// Brand logos
+>>>>>>> c07b0a173cd29ac70dc2a159095b309b1e47069b
 import zomatoLogo from "../assets/Zomato.png";
 import swiggyLogo from "../assets/swiggy.jpg";
 
@@ -84,7 +92,7 @@ function Home() {
         <div className="menu-card">
           <div className="heart-icon">♥</div>
           <img src={Leef} alt="item" className="menu-img" />
-          <h3 className="menu-title">Vazha Leaf Alfam</h3>
+          <h3 className="menu-title">Vazhayla Alfam</h3>
           <p className="menu-desc">Hot Leaf Magic</p>
           <div className="menu-rating-price"><div className="stars">★★★★★</div></div>
         </div>

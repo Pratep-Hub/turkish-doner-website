@@ -63,7 +63,7 @@ function ContactPage() {
 
           <div className="info-card timing-card">
             <h3>⏰ Shop Timing</h3>
-            <p><strong>Open:</strong> 12:00 AM</p>
+            <p><strong>Open:</strong> 12:00 PM</p>
             <p><strong>Close:</strong> 11:30 PM</p>
           </div>
         </div>
